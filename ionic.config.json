@@ -1,0 +1,7 @@
+{
+  "name": "churras-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
