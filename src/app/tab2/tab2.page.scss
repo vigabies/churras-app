@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.top{
+  background-color: aqua;
+}
+
+.body{
+  background-color: aquamarine;
+  display: flex;
+}
+
+.bodyTwo{
+  display: flex;
+  ion-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+
+ion-button{
+  height: 20px;
+  width: 19%;
+}
