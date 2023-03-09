@@ -7,16 +7,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <body>
+
   <div class="container-coin">
     <!--a imagem virou variavel-->
-    <img [src]="image" alt="">
+    <img [@rotatedStated]="state" [src]="image" alt="">
     <!-- imprimir texto com interloculação {{}} -->
     <h1>{{info}}</h1>
   </div>
+</body>
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar class="btn" color="bege">
+  <ion-toolbar (click)="jogarMoeda()" class="btn">
     <ion-title class="ion-text-center">
       Jogar a moeda!
     </ion-title>
