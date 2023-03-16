@@ -1,29 +1,39 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  background-color: antiquewhite;
+.value-title {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.top{
-  background-color: aqua;
-}
-
-.body{
-  background-color: aquamarine;
-  display: flex;
-}
-
-.bodyTwo{
-  display: flex;
-  ion-button{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.value-buttons {
+  ion-button {
+    height: 50px;
+    width: 50px;
+    --border-radius: 40%;
   }
 }
 
-
-ion-button{
-  height: 20px;
-  width: 19%;
+.text-center{
+  align-items: center;
+  justify-content: center;
 }
+
+.ion-text-center-title{
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.center-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ion-button{
+    height: 50px;
+    width: 50px;
+  }
+}
+
+ion-label{
+  font-weight: 300;
+}
+
