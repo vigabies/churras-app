@@ -6,40 +6,58 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-  //criando as variaveis
-  valor = 1;
-
-  botao1 = 1;
-  botao2 = 3;
-  botao3 = 6;
-  botao4 = 9;
-  botao5 = 12;
-
+  //declarando as variaveis
   pontoT1 = 0;
   pontoT2 = 0;
+  valendo = 1;
+  partida1 = 0;
+  partida2 = 0;
 
-  state = "default";
+  constructor() { }
 
-  constructor() {}
-
-  //adicionando os valores
-  botaoAdd1() {
-    this.valor = this.botao1;
+  changeValue(numero: number) {
+    this.valendo = numero;
   }
 
-  botaoAdd2() {
-    this.valor = this.botao2;
+  addPonto1() {
+    this.pontoT1 += this.valendo
+    this.valendo = 1
+
+    if(this.pontoT1 >= 12){
+      this.partida1 += 1
+      this.pontoT1 = 0
+      this.pontoT2 = 0
+    }
   }
 
-  botaoAdd3() {
-    this.valor = this.botao3;
+  subPonto1() {
+    this.pontoT1 -= this.valendo
+    this.valendo = 1
   }
 
-  botaoAdd4() {
-    this.valor = this.botao4;
+  addPonto2(){
+    this.pontoT2 += this.valendo
+    this.valendo = 1
+
+    if(this.pontoT2 >= 12){
+      this.partida2 += 1
+      this.pontoT1 = 0
+      this.pontoT2 = 0
+    }
   }
 
-  botaoAdd5() {
-    this.valor = this.botao5;
+  subPonto2(){
+    this.pontoT2 -= this.valendo
+    this.valendo = 1
   }
+
+  clean(){
+    this.pontoT1 = 0;
+    this.pontoT2 = 0;
+    this.valendo = 1;
+    this.partida1 = 0;
+    this.partida2 = 0;
+  }
+
+
 }
