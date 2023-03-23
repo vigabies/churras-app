@@ -1,11 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="vinho" >
-    <ion-title class="ion-text-center">
-      ?
-    </ion-title>
+  <ion-toolbar color="vinho">
+    <ion-title class="ion-text-center">DADO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="container-coin">
+    <ion-item>
+      <ion-input>
+        {{size}}
+      </ion-input>
+    </ion-item>
 
+    <img src="assets/dado.png" alt="dado" />
+
+    <h3>{{value}}</h3>
+
+    <ion-button color="blue">Jogar o dado!</ion-button>
+  </div>
 </ion-content>

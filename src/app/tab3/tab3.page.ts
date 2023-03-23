@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  size = 0;
+  dado = "assets/dado.png";
+  dadoGif = "assets/dadoGif.webp";
+  value = 0; //valor dado
 
   constructor() {}
 
