@@ -1,3 +1,21 @@
+ion-label{
+  font-weight: 300;
+}
+
+ion-card{
+  border-radius: 8%;
+  width: 340px;
+  box-shadow: 5px 5px 16px 2px rgba(153,153,168,0.54);
+  -webkit-box-shadow: 5px 5px 16px 2px rgba(153,153,168,0.54);
+  -moz-box-shadow: 5px 5px 16px 2px rgba(153,153,168,0.54);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+
 .value-title {
   font-size: 20px;
   font-weight: 500;
@@ -32,8 +50,3 @@
     width: 50px;
   }
 }
-
-ion-label{
-  font-weight: 300;
-}
-

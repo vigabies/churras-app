@@ -1,8 +1,6 @@
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar color="vinho">
-    <ion-title  class="ion-text-center">
-      CONTADOR DE TRUCO
-    </ion-title>
+    <ion-title class="ion-text-center"> CONTADOR DE TRUCO </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,44 +11,74 @@
     </ion-row>
 
     <ion-row class="value-buttons">
-      <ion-col><ion-button color="blue" (click)="changeValue(1)">1</ion-button></ion-col>
-      <ion-col><ion-button color="blue" (click)="changeValue(3)">3</ion-button></ion-col>
-      <ion-col><ion-button color="blue" (click)="changeValue(6)">6</ion-button></ion-col>
-      <ion-col><ion-button color="blue" (click)="changeValue(9)">9</ion-button></ion-col>
-      <ion-col><ion-button color="blue" (click)="changeValue(12)">12</ion-button></ion-col>
+      <ion-col
+        ><ion-button color="blue" (click)="changeValue(1)"
+          >1</ion-button
+        ></ion-col
+      >
+      <ion-col
+        ><ion-button color="blue" (click)="changeValue(3)"
+          >3</ion-button
+        ></ion-col
+      >
+      <ion-col
+        ><ion-button color="blue" (click)="changeValue(6)"
+          >6</ion-button
+        ></ion-col
+      >
+      <ion-col
+        ><ion-button color="blue" (click)="changeValue(9)"
+          >9</ion-button
+        ></ion-col
+      >
+      <ion-col
+        ><ion-button color="blue" (click)="changeValue(12)"
+          >12</ion-button
+        ></ion-col
+      >
     </ion-row>
 
     <ion-row>
       <ion-col class="center-col">
         <ion-label>Time 1</ion-label>
-        <ion-button color="green" (click)="addPonto1()"><ion-icon name="add-outline"></ion-icon></ion-button>
+        <ion-button color="green" (click)="addPonto1()"
+          ><ion-icon name="add-outline"></ion-icon
+        ></ion-button>
         <ion-button color="gray">{{pontoT1}}</ion-button>
-        <ion-button color="red" (click)="subPonto1"><ion-icon name="remove-outline"></ion-icon></ion-button>
+        <ion-button color="red" (click)="subPonto1()"
+          ><ion-icon name="remove-outline"></ion-icon
+        ></ion-button>
       </ion-col>
 
       <ion-col class="center-col">
         <ion-label>Time 2</ion-label>
-        <ion-button color="green" (click)="addPonto2()"><ion-icon name="add-outline"></ion-icon></ion-button>
+        <ion-button color="green" (click)="addPonto2()"
+          ><ion-icon name="add-outline"></ion-icon
+        ></ion-button>
         <ion-button color="gray">{{pontoT2}}</ion-button>
-        <ion-button color="red" (click)="subPonto2()"><ion-icon name="remove-outline"></ion-icon></ion-button>
+        <ion-button color="red" (click)="subPonto2()"
+          ><ion-icon name="remove-outline"></ion-icon
+        ></ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <ion-card>
-    <ion-card-title class="ion-text-center-title">PARTIDAS</ion-card-title>
-    <ion-card-content class="ion-text-center">
-      <ion-row>
-        <ion-col><ion-label>TIME 1</ion-label></ion-col>
-        <ion-col><ion-label>{{partida1}}</ion-label></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-label>TIME 2</ion-label></ion-col>
-        <ion-col><ion-label>{{partida2}}</ion-label></ion-col>
-      </ion-row>
-      <ion-row class="text-center">
-        <ion-button color="blue" (click)="clean()">LIMPAR</ion-button>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+  <div class="center">
+    <ion-card>
+      <ion-card-title class="ion-text-center-title">PARTIDAS</ion-card-title>
+      <ion-card-content class="ion-text-center">
+        <ion-row>
+          <ion-col><ion-label>TIME 1</ion-label></ion-col>
+          <ion-col><ion-label>{{partida1}}</ion-label></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-label>TIME 2</ion-label></ion-col>
+          <ion-col><ion-label>{{partida2}}</ion-label></ion-col>
+        </ion-row>
+        <ion-row class="text-center">
+          <ion-button color="blue" (click)="clean()">LIMPAR</ion-button>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

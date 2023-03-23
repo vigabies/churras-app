@@ -59,5 +59,4 @@ export class Tab2Page {
     this.partida2 = 0;
   }
 
-
 }
